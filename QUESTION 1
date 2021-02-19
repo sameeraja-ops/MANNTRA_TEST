@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "" FIRST
 read -p "" SECOND
 read -p "" THIRD
