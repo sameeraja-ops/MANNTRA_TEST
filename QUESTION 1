@@ -1,0 +1,10 @@
+read -p "" FIRST
+read -p "" SECOND
+read -p "" THIRD
+
+if [ -z "$FIRST" ] ||  [ -z "$SECOND" ] ||  [ -z "$THIRD" ]
+  then
+    echo "Missing arguments"
+else    
+    echo "$FIRST, $SECOND, $THIRD"
+fi
