@@ -3,5 +3,6 @@ file2=./videofile2.mkv
 file3=$(touch /home/centos/outputfile.mkv)
 read file1
 read file2
+## Used mkvmerge utility
 mkvmerge -o $file3 $file1 +$file2
 echo "$file3"
