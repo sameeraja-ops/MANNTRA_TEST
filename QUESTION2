@@ -1,0 +1,3 @@
+#!/bin/bash
+curl -o /dev/null -s -w "%{http_code}\n" https://raw.githubusercontent.com/ellastic/examples/master/Common%20Data%20Formats/nginx_logs/nginx_logs >> statuscount.txt
+echo "$(wc -l statuscount.txt | cut -d " " -f1)"
