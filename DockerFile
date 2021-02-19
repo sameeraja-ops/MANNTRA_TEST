@@ -1,0 +1,6 @@
+FROM httpd
+COPY ./public-html/ /usr/local/apache2/htdocs/
+
+FROM danday74/nginx-lua
+COPY --from=0 /usr/local/apache2/conf/httpd.conf /nginx/conf/nginx.conf
+COPY --from=0 /usr/local/apache2/htdocs/  /nginx/conf/nginx.conf
